@@ -15,7 +15,7 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 255 128 255
 	SetBorderColor 0 0 0
-	PlayAlertSound 8 100
+	PlayAlertSound 8 300
 
 # Quest Items Made Bigger
 Show
@@ -52,10 +52,10 @@ Show
 	ItemLevel <= 20
 	SetFontSize 39
 
-# Distinguish Jewels
-Show
-	BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
-	SetBorderColor 98 0 255
+## Distinguish Jewels
+#Show
+#	BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+#	SetBorderColor 98 0 255
 
 # Reliquary
 Show
@@ -64,7 +64,7 @@ Show
 	SetTextColor 255 206 152
 	SetBackgroundColor 23 15 0
 	SetBorderColor 255 165 0
-	PlayAlertSound 7 100
+	PlayAlertSound 7 200
 
 # Leaguestones
 Show
@@ -165,7 +165,7 @@ Show
 	SetTextColor 135 175 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 135 175 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 38 38 38       # BACKGROUND:	 Fragments - valuable
-	PlayAlertSound 7 100
+	PlayAlertSound 1 300
 
 Show
 	BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret" "Glassblower's Bauble" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant"
@@ -174,6 +174,7 @@ Show
 #	SetTextColor 219 190 147
 	SetBackgroundColor  70 35 0
 	SetBorderColor 255 128 0
+	PlayAlertSound 2 300
 
 # Low Currency
 Show
@@ -195,7 +196,7 @@ Show
 	SetBorderColor 0 128 128
 
 # Quality Gems
-	PlayAlertSound 6 100
+	PlayAlertSound 6 200
 #	PlayAlertSound 9 88
 
 # Breach Splinters
@@ -212,7 +213,7 @@ Show
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 180 0 0 255       # BACKGROUND:	 Fragments - valuable
-	PlayAlertSound 7 100
+	PlayAlertSound 7 300
 
 Show
 	BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret" "Glassblower's Bauble" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant"
@@ -248,7 +249,7 @@ Show
 	SetBackgroundColor 28 28 28
 	SetBorderColor 175 95 95
 	SetTextColor 255 95 135
-	PlayAlertSound 9 100
+	PlayAlertSound 9 200
 
 
 # Other Important Things
@@ -269,7 +270,7 @@ Show
 	SetTextColor 255 255 255
 	SetBackgroundColor 20 20 20
 	SetBorderColor 180 180 180
-	PlayAlertSound 1 100
+	PlayAlertSound 1 200
 
 Show
 	LinkedSockets >= 5
@@ -278,7 +279,7 @@ Show
 	SetTextColor 136 136 255
 	SetBackgroundColor 0 15 31
 	SetBorderColor 136 136 255
-	PlayAlertSound 1 100
+	PlayAlertSound 1 200
 
 Show
 	LinkedSockets >= 5
@@ -287,7 +288,7 @@ Show
 	SetTextColor 255 255 119
 	SetBackgroundColor 30 30 0
 	SetBorderColor 180 180 60
-	PlayAlertSound 1 100
+	PlayAlertSound 1 200
 
 Show
 	LinkedSockets >= 5
@@ -296,22 +297,24 @@ Show
 	SetTextColor 175 96 37
 	SetBackgroundColor 31 15 2
 	SetBorderColor 175 96 37
-	PlayAlertSound 1 100
+	PlayAlertSound 1 200
 
 # Show All Other Uniques
 Show
 	Rarity = Unique
 	SetFontSize 36
-	PlayAlertSound 1 100
+	PlayAlertSound 6 300
 
 # 6 Sockets for 7 Jewellers
 Show
 	LinkedSockets < 5
 	Sockets = 6
 	Rarity < Unique
-	SetFontSize 38
-	SetBackgroundColor 33 30 26
-	SetBorderColor 128 119 99
+	SetFontSize 42
+	SetBackgroundColor 15 38 64
+	SetBorderColor 192 214 237
+	SetTextColor 224 224 255
+	PlayAlertSound 2 150
 
 # Chromatic Items
 Show
@@ -326,16 +329,20 @@ Show
 Show
 	BaseType Gavel "Stone Hammer" "Rock Breaker"
 	Rarity = Normal
-	SetBackgroundColor 33 30 26
-	SetBorderColor 128 119 99
+	SetFontSize 38
+	SetBackgroundColor 48 48 48
+	SetBorderColor 164 164 164
+	SetTextColor 229 229 229
 
 # Chisel Recipe (20% Hammer + Any Endgame Map)
 Show
 	Quality >= 12
 	BaseType Gavel "Stone Hammer" "Rock Breaker"
 	Rarity = Magic
-	SetBackgroundColor 33 30 26
-	SetBorderColor 128 119 99
+	SetFontSize 38
+	SetBackgroundColor 48 48 48
+	SetBorderColor 255 128 0
+	SetTextColor 229 229 229
 
 # Blacksmith's Whetstones & Armorer's Scraps
 Show
@@ -384,12 +391,36 @@ Show
 	ItemLevel < 75
 	SetFontSize 36
 
-Show
-	Class Rings Belts Amulets
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel < 75
-	SetFontSize 38
+#Show
+#	Class Rings Belts Amulets
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel < 75
+#	SetFontSize 38
+
+Show #$trinkets, jewels, tiny
+	Class Jewel
+	Rarity Rare
+	SetFontSize 40
+	SetTextColor 255 255 0 255           # TEXTCOLOR:	 Jewel: Rare
+	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
+	SetBackgroundColor 75 75 0 255       # BACKGROUND:	 Jewel: Rare
+
+Show #$great, tiny
+	Class Rings Amulets Belts
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 40
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 25 235 25 255         # BORDERCOLOR:	 Rares - Size - Tiny, special base
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, tiny
+	Class Rings Amulets Belts
+	Rarity Rare
+	SetFontSize 40
+	SetBorderColor 25 235 25 255         # BORDERCOLOR:	 Rares - Size - Tiny, special base
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 # Prioritizes Smaller Bases for Space Efficiency
 Show
@@ -422,7 +453,7 @@ Show
 Show
 	Class Ring Belt Amulet
 	Rarity = Rare
-	ItemLevel >= 60
+	ItemLevel >= 70
 	SetFontSize 40
 	SetTextColor 255 255 51
 	SetBackgroundColor 24 24 24
@@ -481,7 +512,7 @@ Show
 	BaseType "Quicksilver Flask"
 	ItemLevel <= 24
 	SetFontSize 45
-	PlayAlertSound 8 100
+	PlayAlertSound 8 200
 
 # Useful Flasks
 Show
@@ -707,7 +738,7 @@ Show
 Show #$trinkets, jewels %H4
 	Class Jewel
 	Rarity <= Magic
-	SetFontSize 36
+	SetFontSize 44
 	SetTextColor 0 100 255               # TEXTCOLOR:	 Jewel: Magic
 	SetBorderColor 0 75 250              # BORDERCOLOR:	 Cosmetic: Magic Jewels
 	SetBackgroundColor 0 20 40 255       # BACKGROUND:	 Jewel: Magic
