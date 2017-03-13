@@ -1,4 +1,4 @@
-# vim:setf=config:
+# vim:setft=config:
 ###
 # Where: %userprofile%/My Games/Path of Exile/neverland.filter
 #  What: path of exile lootfilter
@@ -146,6 +146,19 @@ Show
 	SetFontSize 42
 	SetTextColor 74 230 58
 	SetBorderColor 74 230 58
+
+
+# for 3 chaos recipie
+ Show
+ Rarity Rare
+ Quality = 20
+ Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets"
+ Rarity Rare
+ ItemLevel >= 60
+ ItemLevel < 75
+ SetFontSize 42
+ SetBorderColor 0 255 255 255         # BORDERCOLOR:	 Crafting: T1
+ SetBackgroundColor 30 90 45 225 # BACKGROUND: Rares - Basetype - Great
 
 Show
 	BaseType Talisman
