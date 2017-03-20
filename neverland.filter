@@ -1,4 +1,4 @@
-# vim:setft=config:
+# vim:ft=poe:
 ###
 # Where: %userprofile%/My Games/Path of Exile/neverland.filter
 #  What: path of exile lootfilter
@@ -8,6 +8,119 @@
 ###
 # This PoE lootfilter is based on the Neverland Vim colorscheme[0]
 # [0]: https://github.com/trapd00r/neverland-vim-theme
+
+Show #$great, armor, small %HB4
+	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage"
+	Rarity Rare
+	SetFontSize 40
+	SetBorderColor 210 210 210 255       # BORDERCOLOR:	 Rares - Size - Small (+Amazing basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, armor, small %HB4
+	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 40
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 210 210 210 255       # BORDERCOLOR:	 Rares - Size - Small (+Amazing basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, weapons, small %HB3
+	Width = 1
+	BaseType "Gemini Claw" "Tornado Wand" "Opal Wand" "Prophecy Wand" "Vaal Rapier" "Harpy Rapier" "Profane Wand" "Jewelled Foil" "Spiraled Foil" "Skean" "Kris" "Demon Dagger" "Sai"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, weapons, small %HB3
+	Width = 1
+	BaseType "Gemini Claw" "Tornado Wand" "Opal Wand" "Prophecy Wand" "Vaal Rapier" "Harpy Rapier" "Profane Wand" "Jewelled Foil" "Spiraled Foil" "Skean" "Kris" "Demon Dagger" "Sai"
+	Rarity Rare
+	ItemLevel >= 65
+	SetFontSize 36
+	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great	
+
+Show #$great, weapons, bulky %HB3
+	BaseType "Vaal Axe" "Coronal Maul" "Harbinger Bow"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, weapons, bulky %HB3
+	BaseType "Vaal Axe" "Coronal Maul" "Harbinger Bow"
+	Rarity Rare
+	ItemLevel >= 65
+	SetFontSize 36
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great	
+
+Show #$great, weapons, bulky %HB3
+	BaseType "Assassin's Garb" "Glorious Plate" "Astral Plate" "Spike-Point Arrow Quiver"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, weapons %HB3
+	BaseType "Void Sceptre" "Sambar Sceptre"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, weapons %HB3
+	BaseType "Void Sceptre" "Sambar Sceptre"
+	Rarity Rare
+	ItemLevel >= 65
+	SetFontSize 36
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great	
+
+Show #$great, armor, small %HB3
+	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Sinner Tricorne" "Vaal Spirit Shield"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, armor, small %HB3
+	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Sinner Tricorne" "Vaal Spirit Shield" "Conjurer Boots" "Conjurer Gloves" "Solaris Circlet"
+	Rarity Rare
+	ItemLevel >= 65
+	SetFontSize 36
+	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great	
+
+Show #$great, armor, bulky %HB3
+	BaseType "Assassin's Garb" "Glorious Plate" "Astral Plate" "Spike-Point Arrow Quiver"
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 36
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
+Show #$great, armor, bulky %HB3
+	BaseType "Assassin's Garb" "Glorious Plate" "Astral Plate" "Spike-Point Arrow Quiver"
+	Rarity Rare
+	ItemLevel >= 65
+	SetFontSize 36
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
+
 
 Show
 	BaseType "Mirror of Kalandra"
@@ -804,6 +917,9 @@ Show #$crafting, trinkets, regal %D2
 	ItemLevel >= 75
 	SetFontSize 34
 	SetBorderColor 255 190 0 150         # BORDERCOLOR:	 Crafting: Regal trinkets
+
+
+
 
 # Hide Everything Else of Little to No Value
 Hide
