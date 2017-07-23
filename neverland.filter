@@ -141,6 +141,13 @@ Show
 	SetFontSize 42
 	SetBorderColor 128 0 128
 
+Show
+	BaseType "Unset Ring"
+	SetFontSize 40
+	SetTextColor 243 64 12 255
+	SetBorderColor 243 64 12
+	SetBackgroundColor 53 14 2
+
 # Racing/Leveling Sapphire Ring Highlight for Merveil
 Show
 	BaseType "Sapphire Ring"
@@ -377,7 +384,7 @@ Show
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 180 0 0 255       # BACKGROUND:	 Fragments - valuable
-	PlayAlertSound 7 300
+	PlayAlertSound 5 300
 
 Show
 	BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret" "Glassblower's Bauble" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant"
@@ -650,6 +657,7 @@ Show
 	BaseType "Steel Ring" "Opal Ring" "Marble Amulet" "Crystal Belt" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	SetFontSize 38
 	SetBorderColor 3 88 171
+	PlayAlertSound 3 300
 
 # ilvl 84 Crafting & Enchanting Helm Bases
 Show
